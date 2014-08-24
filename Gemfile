@@ -34,3 +34,4 @@ end
 
 gem 'rspec-rails', '2.9.0'
 gem 'capybara', '1.1.2'
+gem 'bootstrap-sass', '2.0.0'

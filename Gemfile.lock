@@ -26,6 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    bootstrap-sass (2.0.0)
     builder (3.1.4)
     capybara (1.1.2)
       mime-types (>= 1.16)
@@ -148,6 +149,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bootstrap-sass (= 2.0.0)
   capybara (= 1.1.2)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
