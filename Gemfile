@@ -36,6 +36,10 @@ gem 'capybara', '1.1.2'
 
 gem 'bootstrap-sass', '2.0.0'
 
+gem 'bcrypt-ruby', '3.0.1'
+
+#gem 'protected_attributes'
+
 group :development do
   gem 'rspec-rails', '2.9.0'
   gem 'annotate', '~> 2.4.1.beta'
