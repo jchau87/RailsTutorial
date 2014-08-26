@@ -32,8 +32,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'capybara', '1.1.2'
-
 gem 'bootstrap-sass', '2.0.0'
 
 gem 'bcrypt-ruby', '3.0.1'
@@ -41,6 +39,12 @@ gem 'bcrypt-ruby', '3.0.1'
 #gem 'protected_attributes'
 
 group :development do
-  gem 'rspec-rails', '2.9.0'
+  gem 'rspec-rails', '2.13.1'
   gem 'annotate', '~> 2.4.1.beta'
+end
+
+group :test do
+  gem 'capybara', '2.1.0'
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'factory_girl_rails', '4.2.0'
 end
