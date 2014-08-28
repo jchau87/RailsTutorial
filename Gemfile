@@ -34,7 +34,7 @@ end
 
 gem 'bootstrap-sass', '2.0.0'
 
-gem 'bcrypt-ruby', '3.0.1'
+gem 'bcrypt-ruby', '3.1.2'
 
 gem 'sprockets', '2.11.0'
 

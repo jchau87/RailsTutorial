@@ -27,8 +27,8 @@ GEM
       tzinfo (~> 0.3.37)
     annotate (2.4.1.beta1)
     arel (4.0.2)
-    bcrypt-ruby (3.0.1)
-    bcrypt-ruby (3.0.1-x86-mingw32)
+    bcrypt-ruby (3.1.2)
+    bcrypt-ruby (3.1.2-x86-mingw32)
     bootstrap-sass (2.0.0)
     builder (3.1.4)
     capybara (2.1.0)
@@ -45,7 +45,7 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.7.1)
+    coffee-script-source (1.8.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.1)
@@ -153,7 +153,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (~> 2.4.1.beta)
-  bcrypt-ruby (= 3.0.1)
+  bcrypt-ruby (= 3.1.2)
   bootstrap-sass (= 2.0.0)
   capybara (= 2.1.0)
   coffee-rails (= 4.0.1)
