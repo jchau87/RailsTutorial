@@ -29,9 +29,7 @@ describe 'Authentication' do
     describe 'with valid information' do
       let(:user) { FactoryGirl.create(:user) }
       before do
-        fill_in 'Email', with: user.email.upcase
-        fill_in 'Password', with: user.password
-        click_button 'Sign in'
+        sign_in_user(user)
       end
 
       it { should have_title(user.name) }
@@ -45,12 +43,22 @@ describe 'Authentication' do
         before { click_link 'Sign out' }
         it { should have_link('Sign in') }
       end
+
+      describe "visiting the 'new user' page" do
+        before { visit signup_path }
+        
+        it { should have_title(full_title) }
+      end
     end
   end
 
   describe 'authorization' do
     describe 'for non-signed in users' do
       let(:user) { FactoryGirl.create(:user) }
+
+      it { should_not have_link('Profile') }
+      it { should_not have_link('Settings') }
+      it { should_not have_link('Sign out', href: signout_path) }
 
       describe 'in the users controller' do
 
